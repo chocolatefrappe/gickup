@@ -11,7 +11,8 @@ RUN apk add --no-cache \
     bash \
     curl \
     dumb-init \
-    su-exec
+    su-exec \
+    tzdata
 RUN <<EOF
     mkdir -p /var/lib/git
     addgroup -S -g 102 git
